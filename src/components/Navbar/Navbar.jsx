@@ -8,17 +8,17 @@ const Navbar = () => {
         <>
         
             <NavLink to="/" className={({ isActive, isPending }) =>
-                isActive ? "bg-[#c1121f] rounded-full shadow-lg shadow-[#c1121f] text-white hover:bg-[#780000]" : isPending ? "pending" : ""}>
+                isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
                 <li className="font-semibold px-5 py-2">Home</li>
             </NavLink>
 
             <NavLink to="/about" className={({ isActive, isPending }) =>
-                isActive ? "bg-[#c1121f] rounded-full shadow-lg shadow-[#c1121f] text-white hover:bg-[#780000]" : isPending ? "pending" : ""}>
+                isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
                 <li className="font-semibold px-5 py-2">About Us</li>
             </NavLink>
 
             <NavLink to="/contact" className={({ isActive, isPending }) =>
-                isActive ? "bg-[#c1121f] rounded-full shadow-lg shadow-[#c1121f] text-white hover:bg-[#780000]" : isPending ? "pending" : ""}>
+                isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
                 <li className="font-semibold px-5 py-2">Contact</li>
             </NavLink>
         </>
