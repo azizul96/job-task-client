@@ -13,6 +13,10 @@ import Register from './pages/Register/Register';
 import Layout from './Layout/Layout';
 import Dashboard from './Layout/Dashboard';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AllTask from './pages/Dashboard/AllTask/AllTask';
+import AddTask from './pages/Dashboard/AddTask/AddTask';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 
 const router = createBrowserRouter([
@@ -27,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio></Portfolio>,
       },
       {
         path: "/contact",
@@ -46,15 +54,26 @@ const router = createBrowserRouter([
     path: "dashboard",
     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children: [
-
+      {
+        path: "",
+        element: <AllTask></AllTask>
+      },
+      {
+        path: "add-task",
+        element: <AddTask></AddTask>
+      },
     ]
   }
 ]);
 
+const queryClient = new QueryClient()
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
     </AuthProvider>
     <Toaster/>
   </React.StrictMode>,

@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="footer justify-between p-10  text-neutral-content container mx-auto">
                 <aside>
                     <img className="w-16 " src="/logo.png" alt="" />
-                    <p className="text-white text-lg">Employee Management System<br/>Providing reliable service since 2020</p>
+                    <p className="text-white text-lg">SCC Technovision Inc.<br/>Providing reliable service since 2020</p>
                 </aside> 
                 <nav>
                     <header className="font-bold text-[#335c67] text-2xl">Follow <br />Us</header> 
@@ -20,7 +20,7 @@ const Footer = () => {
             </footer>
             <div className="footer footer-center p-4 bg-base-300 text-base-content">
                 <aside>
-                    <p>Copyright © 2023 - All right reserved by EMS</p>
+                    <p>Copyright © 2023 - All right reserved by  Technovision Inc.</p>
                 </aside>
             </div>
         </div>

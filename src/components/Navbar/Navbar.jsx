@@ -16,6 +16,10 @@ const Navbar = () => {
                 isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
                 <li className="font-semibold px-5 py-2">About Us</li>
             </NavLink>
+            <NavLink to="/portfolio" className={({ isActive, isPending }) =>
+                isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
+                <li className="font-semibold px-5 py-2">Portfolio</li>
+            </NavLink>
 
             <NavLink to="/contact" className={({ isActive, isPending }) =>
                 isActive ? "bg-[#9e2a2b] rounded-full shadow-md shadow-[#9e2a2b] text-white hover:bg-[#9e2a2b]" : isPending ? "pending" : ""}>
